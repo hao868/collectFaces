@@ -1,4 +1,6 @@
-# campus-card
+# 自定义拍照前景-模拟人脸拍照
+
+# 运行环境需要运行在https上
 
 ## Project setup
 ```
