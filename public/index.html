@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--<link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
+    <link rel="stylesheet" href="<%= BASE_URL %>css/reset.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>css/iconfont/iconfont.css" />
+    <script src="config/index.js"></script>
+    <title>虚拟电子校园卡</title>
+    <style>
+        .loader-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .loader-wrap .circle {
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 0.4rem;
+            -webkit-box-sizing: border-box;
+            border: solid 0.08rem rgba(0, 0, 0, 0.2);
+            border-top-color: #ff636b;
+            -webkit-animation: spin 1.5s infinite linear;
+            margin-bottom: 0.1rem;
+        }
+        
+        .loader-wrap .text {
+            font-size: 0.32rem;
+            color: rgba(0, 0, 0, 0.3);
+        }
+        
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        .mint-msgbox {
+            width: 70% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+		<strong>We're sorry but campus-card doesn't work properly without JavaScript
+			enabled. Please enable it to continue.</strong>
+	</noscript>
+    <div id="app">
+        <div class="loader-wrap">
+            <div class="circle"></div>
+            <p class="text">拼命加载中...</p>
+        </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script src="<%= BASE_URL %>js/rem.js"></script>
+</body>
+
+</html>
